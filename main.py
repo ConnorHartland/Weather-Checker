@@ -4,7 +4,6 @@ from location import Location
 
 def main():
     positiveRep = ['yes', 'y', 'Yes', 'Y']
-    negativeRep = ['no', 'n', 'No', 'n']
     loop = True
 
     userLoc = input("Would you like to enter your own city? ")
@@ -14,7 +13,7 @@ def main():
         print(Location(userLoc))
 
     while loop:
-        locations = ['London', 'Dublin', 'New York', 'San Jose,CA', 'Los Angeles', 'Rome', 'Orange County']
+        locations = ['London', 'Dublin', 'New York', 'San Jose', 'Los Angeles', 'Rome', 'Orange County']
         for location in locations:
             if ' ' in location:
                 split = location.split()

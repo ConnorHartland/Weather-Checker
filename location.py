@@ -12,6 +12,7 @@ class Location:
         self.humidity = self.r_json['main']['humidity']
         self.tempK = self.r_json['main']['temp']
         self.currentTemp = self.kelvinToFaren(self.tempK)
+        self.windSpeed = self.r_json['wind']['speed']
 
     def __str__(self):
         myString = "Currently in {:s}:\nTemperature: {:.2f}\nWeather Conditions: {:s}\nHumidity Level: {:d}".format(self.place, self.currentTemp, self.weather\
