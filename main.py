@@ -1,6 +1,6 @@
 import requests
 import sys
-from Location import Location   
+from location import Location   
 
 def main():
     positiveRep = ['yes', 'y', 'Yes', 'Y']
@@ -14,7 +14,7 @@ def main():
         print(Location(userLoc))
 
     while loop:
-        locations = ['London', 'Dublin', 'New York', 'San Jose', 'Los Angeles', 'Rome', 'Orange County']
+        locations = ['London', 'Dublin', 'New York', 'San Jose,CA', 'Los Angeles', 'Rome', 'Orange County']
         for location in locations:
             if ' ' in location:
                 split = location.split()
