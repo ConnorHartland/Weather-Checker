@@ -14,6 +14,7 @@ def main():
 
     while loop:
         locations = ['London', 'Dublin', 'New York', 'San Jose', 'Los Angeles', 'Rome', 'Orange County']
+        locations.sort()
         for location in locations:
             if ' ' in location:
                 split = location.split()
